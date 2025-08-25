@@ -205,3 +205,4 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+OPM_test_event_ZTF2025/ZTF25abcwzci.csv
