@@ -33,7 +33,7 @@ def generate_pdf(object_id, output_csv=False):
         max_microlensing = pdf.loc[pdf['i:jd'].idxmax(),"d:mulens"]
 
         # Rename columns for easier access
-        namedic = {1: "ZTF_g", 2: "ZTF_r"}
+        namedic = {1: "ZTF_g", 2: "ZTF_r",3: "ZTF_i"}
         pdf["filter"] = pdf["i:fid"].map(namedic)
 
         new_pdf = pdf[["i:jd", "filter", "i:magpsf", "i:sigmapsf"]].copy()
