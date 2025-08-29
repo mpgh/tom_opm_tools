@@ -45,7 +45,7 @@ def generate_pdf(object_id, output_csv=False):
         
         # Save to CSV file
         if output_csv:
-            filename = f"{object_id}.csv"
+            filename = f"lc_{object_id}.csv"
             new_pdf.to_csv(filename, index=False)
 
         
@@ -55,5 +55,5 @@ def generate_pdf(object_id, output_csv=False):
     return new_pdf, max_microlensing
 
 # Example usage:
-new_pdf, max_micro = generate_pdf("ZTF25abcwzci", output_csv=False)
+new_pdf, max_micro = generate_pdf("ZTF25aanzxdg", output_csv=True)
 print(max_micro)
